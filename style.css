@@ -1,0 +1,71 @@
+body{
+  margin: 0;
+  width: 1280px;
+  height: 800px;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.15em;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(8 1fr);
+  grid-template-rows: repeat(5 1fr);
+  background-color: #191919;
+
+}
+.name{
+  grid-column: 1/ 2;
+  grid-row: 1/ 2;
+
+}
+article{
+  padding: 20px;
+}
+
+h2{
+  color: #D8C5C5;
+  font-size: 26px;
+}
+
+.one{
+  font-size: 10px;
+  line-height: 15px;
+  grid-column: 1/ 2 ;
+  grid-row: 1/ 2;
+}
+
+h1{
+  color:#D8C5C5;
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+.title{
+  grid-column: 1/ 4;
+  grid-row: 3/ 4;
+}
+
+p{
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.content{
+  width: 300px;
+  line-height: 1.5em;
+  grid-column: 1/ 4;
+  grid-row: 4/ 6;
+}
+
+.sentence{
+  font-weight: bolder;
+}
+
+.european{
+
+  grid-column: 5/ 9;
+  grid-row: 1/ 6;
+}
+
+/* I define the grid template in the class container as 8 columns and 5 rows which is my parents, and I also set the colunns and rows and give them a class for each children, why it doesn't place the children in the way I wan it to be*/
